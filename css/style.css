@@ -105,8 +105,43 @@
   margin-top: 0;
  }
 
+.navbar{
+ position: fixed;
+ bottom: 2rem; left: 0; right: 0;
+ display: flex;
+ justify-content: center;
+ z-index: 1000;
+}
 
+.navbar .nav{
+ padding: 1rem;
+  background-color: var(--bg-color);
+ border:var(--border);
+ box-shadow: var(--box-shadow);
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: space-around;
+ gap: 1rem;
+ border-radius: .5rem;
+}
 
+.navbar .nav a{
+ font-size: 1.7rem;
+ padding: 1rem 2rem;
+ border-radius: .5rem;
+ transition: .2s linear;
+ color: var(--white);
+}
+
+.navbar .nav a:hover{
+ background: var(--gradient);
+}
+
+ .navbar .nav a i{
+  display: none;
+
+ }
 
 
 
@@ -139,6 +174,42 @@
 
   body{
    padding-bottom: 7rem;
+  }
+
+  .navbar{
+   bottom: 0;
+  }
+
+  .navbar .nav{
+   border-bottom: 0;
+   border-left: 0;
+   border-right: 0;
+   box-shadow: none;
+   border-radius: 0;
+   padding: .5rem;
+   width: 100%;
+  }
+
+  .navbar .nav a{
+   padding: .5rem;
+  }
+
+  .navbar .nav a span{
+   font-size: 1.5rem;
+  }
+
+  .navbar .nav a i{
+   display: block;
+   font-size: 2.5rem;
+   margin-bottom: .5rem;
+  }
+
+  .navbar .nav a:hover{
+   background: none;
+  }
+
+  .navbar .nav a:hover span{
+   color: coral;
   }
 
  }

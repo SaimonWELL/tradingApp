@@ -642,6 +642,36 @@
   margin-top: 0;
  }
 
+ .brands{
+  overflow: hidden;
+  display: flex;
+  gap: 10rem;
+ }
+
+ .brands .brands-container{
+  display: flex;
+  gap: 10rem;
+  animation:brands 10s linear infinite;
+ }
+ 
+ @keyframes brands {
+  0%{
+   transform: translateX(0%);
+  }
+  0%{
+   transform: translateX(-100%);
+  }
+ }
+
+ .brands:hover .brands-container{
+  animation-play-state: paused;
+ }
+ 
+ .brands .brands-container img{
+  height: 5rem;
+  width: 10rem;
+ }
+
 
 
 

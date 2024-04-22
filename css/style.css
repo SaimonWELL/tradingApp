@@ -672,6 +672,36 @@
   width: 10rem;
  }
 
+ .footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 27rem);
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+ }
+
+ .footer .box-container .box h3{
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1rem;
+ }
+
+ .footer .box-container .box a{
+  font-size: 1.6rem;
+  color: var(--light-white);
+  display: block;
+  padding: 1rem 0;
+ }
+
+ .footer .box-container .box a i{
+  color: coral;
+  margin-right: .5rem;
+ }
+
+ .footer .box-container .box a:hover{
+  color: var(--white);
+ }
+
 
 
 
